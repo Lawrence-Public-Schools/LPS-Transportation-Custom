@@ -63,7 +63,7 @@ Contact 1's Information </td><td width="489" align="center" class="bold">Contact
 </tr>
 <tr>
 <td class="bold">Work Phone</td>
-<td>~(*contact_info;flags=custodial,non-emergency;which-pers=1;cat=phone;val=phone;type=Work;)</td><td>~(*contact_info;flags=custodial,non-emergency;which-pers=2;cat=phone;val=phone;type=Work;))</td>
+<td>~(*contact_info;flags=custodial,non-emergency;which-pers=1;cat=phone;val=phone;type=Work;)</td><td>~(*contact_info;flags=custodial,non-emergency;which-pers=2;cat=phone;val=phone;type=Work;)</td>
 </tr>
 <tr style="vertical-align: top;">
 <tr style="vertical-align: top;" class="FooterColor">
