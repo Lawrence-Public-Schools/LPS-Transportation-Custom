@@ -480,6 +480,7 @@ Transportation
 <td class="bold">Date</td><td><input name="[01]Trans_Date" value="" id="Date for Transportation Company" type="text"></td>
 </tr>
 </table>
+<div class="button-row"><input type="hidden" name="ac" value="prim">~[submitbutton]</div>
 </div>
 </div>
 <script type="text/javascript">
