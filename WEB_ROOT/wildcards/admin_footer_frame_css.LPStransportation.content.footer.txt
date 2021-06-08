@@ -490,11 +490,17 @@ Transportation
     
     $j("div#LPStransportationCustomhiddentable").remove();
     }
+    
+    function RemoveLPStransportationfields(){
+    
+    $j("div#LPStransportationCustomhiddentable").remove();
+    }
+    
     var $testURL;
     $testURL = $j(document)[0].documentURI;
 
     if ($testURL.indexOf("admin/students/transportation.html") !== -1) {
         $j(document).ready(AddLPStransportationfields);
-    }
+    } else { $j(document).ready(RemoveLPStransportationfields);}
 
 </script>
