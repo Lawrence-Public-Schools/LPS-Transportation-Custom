@@ -4,7 +4,7 @@
 <tr bgcolor="#004890">
 <td class="trans" colspan="4" align="center">
 Transportation Information
-for</br> ~(first_name) ~(last_name)
+for<br> ~(first_name) ~(last_name)
 </tr>
 <tr>
 <td width="140" class="bold">Home phone</td>
@@ -14,7 +14,10 @@ for</br> ~(first_name) ~(last_name)
 <td class="bold">Home Address</td>
 <td>
 <table>
+<tr>
+<td></td>
 <td>~([01]street)</td>
+</tr>
 </table>
 </td>
 </tr>
@@ -24,7 +27,7 @@ for</br> ~(first_name) ~(last_name)
 </tr>
 <tr>
 <td class="trans" colspan="2">
-<div align="center">Contact Information</h1>
+<div align="center">Contact Information
 </div></td>
 </tr>
 </table>
@@ -66,7 +69,7 @@ Old Guardian 1's Information </td><td width="489" align="center" class="bold">Ol
 <tr style="vertical-align: top;" class="FooterColor">
 <td colspan="4" class="trans">
 <div align="center">
-Old Emergency Contacts</h1>
+Old Emergency Contacts
 </div></td>
 </tr>
 <tr style="vertical-align: top;" class="FooterColor" bgcolor="#edf3fe">
@@ -468,7 +471,7 @@ Contact 1's Information </td><td width="489" align="center" class="bold">Contact
 <tr style="vertical-align: top;" class="FooterColor">
 <td colspan="4" class="trans">
 <div align="center">
-Emergency Contacts</h1>
+Emergency Contacts
 </div></td>
 </tr>
 <tr style="vertical-align: top;" class="FooterColor" bgcolor="#edf3fe">
