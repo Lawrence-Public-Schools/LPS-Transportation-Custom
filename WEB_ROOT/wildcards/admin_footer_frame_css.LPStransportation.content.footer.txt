@@ -28,59 +28,6 @@ for</br> ~(first_name) ~(last_name)
 </div></td>
 </tr>
 </table>
-<table width="953" border="0" cellpadding="4" cellspacing="0">
-<tr style="vertical-align: top;">
-<td colspan="2" class="bold" align="center">
-Contact 1's Information </td><td width="489" align="center" class="bold">Contact 2's Information</td>
-</tr>
-<tr bgcolor="#edf3fe">
-<td width="143" class="bold">Relationship</td>
-<td width="324">~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=rel;val=relationship;type=all;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=rel;val=relationship;type=all;)</td>
-</tr>
-<tr>
-<td class="bold">Last Name, First Name</td>
-<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=dem;val=Lastfirst;type=all;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=dem;val=Lastfirst;type=all;)</td>
-</tr>
-<tr bgcolor="#edf3fe">
-<td class="bold">Home Address</td>
-<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=street;type=Home;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=street;type=Home;)</td>
-</tr>
-<tr>
-<td></td>
-<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=city;type=Home;), ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=stateprovince;type=Home;) ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=postalcode;type=Home;)</td><td> ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=city;type=Home;), ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=stateprovince;type=Home;) ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=postalcode;type=Home;)</td>
-</tr>
-<tr bgcolor="#edf3fe">
-<td class="bold">Home Phone </td>
-<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Home;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Home;)</td>
-</tr>
-<tr>
-<td class="bold">Cell Phone </td>
-<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Mobile;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Mobile;)</td>
-</tr>
-<tr bgcolor="#edf3fe">
-<td class="bold">Daytime Phone</td>
-<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Daytime;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Daytime;)</td>
-</tr>
-<tr>
-<td class="bold">Work Phone</td>
-<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Work;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Work;)</td>
-</tr>
-<tr style="vertical-align: top;">
-<tr style="vertical-align: top;" class="FooterColor">
-<td colspan="4" class="trans">
-<div align="center">
-Emergency Contacts</h1>
-</div></td>
-</tr>
-<tr style="vertical-align: top;" class="FooterColor" bgcolor="#edf3fe">
-<td class="bold"> Emergency Contacts</td>
-<td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=dem;val=Lastfirst;type=all;)    <b>Phone</b> ~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=all;)</td><td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=dem;val=Lastfirst;type=all;)    <b>Phone</b> ~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=all;)</td>
-</tr>
-<tr class="FooterColor" style="vertical-align: top;" bgcolor="">
-<td class="bold">Relationship</td>
-<td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=rel;val=relationship;type=all;)</td><td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=rel;val=relationship;type=all;)</td>
-</tr>
-</table>
 
 <table width="953" border="0" cellpadding="4" cellspacing="0">
 <tr style="vertical-align: top;">
@@ -478,6 +425,59 @@ Transportation
     </td>
 <td class="bold">By Whom</td><td><input name="[01]Trans_Bywhom1" value="" id="" type="text"></td>
 <td class="bold">Date</td><td><input name="[01]Trans_Date" value="" id="Date for Transportation Company" type="text"></td>
+</tr>
+</table>
+<table width="953" border="0" cellpadding="4" cellspacing="0">
+<tr style="vertical-align: top;">
+<td colspan="2" class="bold" align="center">
+Contact 1's Information </td><td width="489" align="center" class="bold">Contact 2's Information</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td width="143" class="bold">Relationship</td>
+<td width="324">~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=rel;val=relationship;type=all;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=rel;val=relationship;type=all;)</td>
+</tr>
+<tr>
+<td class="bold">Last Name, First Name</td>
+<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=dem;val=Lastfirst;type=all;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=dem;val=Lastfirst;type=all;)</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td class="bold">Home Address</td>
+<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=street;type=Home;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=street;type=Home;)</td>
+</tr>
+<tr>
+<td></td>
+<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=city;type=Home;), ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=stateprovince;type=Home;) ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=postalcode;type=Home;)</td><td> ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=city;type=Home;), ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=stateprovince;type=Home;) ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=postalcode;type=Home;)</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td class="bold">Home Phone </td>
+<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Home;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Home;)</td>
+</tr>
+<tr>
+<td class="bold">Cell Phone </td>
+<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Mobile;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Mobile;)</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td class="bold">Daytime Phone</td>
+<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Daytime;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Daytime;)</td>
+</tr>
+<tr>
+<td class="bold">Work Phone</td>
+<td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Work;)</td><td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Work;)</td>
+</tr>
+<tr style="vertical-align: top;">
+<tr style="vertical-align: top;" class="FooterColor">
+<td colspan="4" class="trans">
+<div align="center">
+Emergency Contacts</h1>
+</div></td>
+</tr>
+<tr style="vertical-align: top;" class="FooterColor" bgcolor="#edf3fe">
+<td class="bold"> Emergency Contacts</td>
+<td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=dem;val=Lastfirst;type=all;)    <b>Phone</b> ~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=all;)</td><td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=dem;val=Lastfirst;type=all;)    <b>Phone</b> ~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=all;)</td>
+</tr>
+<tr class="FooterColor" style="vertical-align: top;" bgcolor="">
+<td class="bold">Relationship</td>
+<td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=rel;val=relationship;type=all;)</td><td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=rel;val=relationship;type=all;)</td>
 </tr>
 </table>
 <div class="button-row"><input type="hidden" name="ac" value="prim">~[submitbutton]</div>
