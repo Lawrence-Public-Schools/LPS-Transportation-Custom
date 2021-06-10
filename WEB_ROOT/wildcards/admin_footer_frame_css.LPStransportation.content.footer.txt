@@ -100,7 +100,6 @@
         <tr>
           <td colspan="8" align="center" class="bold">Transportation Information for <br />~(first_name) ~(last_name)</td>
         </tr>
-        <tr></tr>
         <tr>
           <td>Transportation</td>
           <td>
@@ -406,13 +405,9 @@
           </td>
           <td colspan="2"></td>
         </tr>
-      </tbody>
-    </table>
-    <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
-      <tbody>
         <tr>
           <td>Comments</td>
-          <td colspan="3">
+          <td colspan="5">
             <label>
               <textarea
                 name="[01]Trans_comment"
@@ -423,6 +418,11 @@
             </label>
           </td>
         </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
+      <tbody>
+        <tr></tr>
         <tr>
           <td>Alt. Pick Up Address</td>
           <td>
@@ -532,6 +532,7 @@
     </table>
     <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
       <tbody>
+        <tr></tr>
         <tr>
           <td colspan="3">
             <div align="center">Contact Information</div>
@@ -581,7 +582,6 @@
           <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Work;)</td>
           <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Work;)</td>
         </tr>
-        <tr></tr>
         <tr>
           <td colspan="3" class="trans">
             <div align="center">Emergency Contacts</div>
