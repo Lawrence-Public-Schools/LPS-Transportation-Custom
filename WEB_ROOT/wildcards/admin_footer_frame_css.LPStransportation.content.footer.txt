@@ -699,6 +699,12 @@
         <!--============================================|STUDENT_CONTACTS_TABLE_END|============================================-->
       </div>
     </div>
+    <script>  var _curSchoolNumber = ~(curschoolid); </script>
+    <div class="hidden">
+      <input id="studentDcid" type="hidden" value="~(rn)" />
+      <input id="schoolId" type="hidden" value="~(OverrideSchoolCode)" />
+      <input id="studentNumber" type="hidden" value="~(rn)" />
+    </div>
     <div class="button-row">
       <input type="hidden" name="ac" value="prim" />~[submitbutton]
     </div>
