@@ -4,16 +4,16 @@
       <tbody>
         <tr>
           <td colspan="4" align="center" class="bold">
-            Address Information for <br />~(first_name) ~(last_name)
+            old original Address Information for <br />~(first_name) ~(last_name)
           </td>
         </tr>
         <tr>
-          <td class="bold">Home phone</td>
+          <td class="bold">old original Home phone</td>
           <td>~(home_phone)</td>
           <td></td>
         </tr>
         <tr>
-          <td>Home Address</td>
+          <td>old original Home Address</td>
           <td>~([01]street)</td>
           <td></td>
         </tr>
@@ -24,27 +24,27 @@
         </tr>
         <tr>
           <td colspan="3">
-            <div align="center">Old Guardian Information</div>
+            <div align="center">old original Guardian Information</div>
           </td>
         </tr>
         <tr>
           <td></td>
-          <td class="bold">Old Guardian 1's Information</td>
-          <td class="bold">Old Guardian 2's Information</td>
+          <td class="bold">old original Guardian 1's Information</td>
+          <td class="bold">old original Guardian 2's Information</td>
         </tr>
         <tr>
-          <td class="bold">Old Relationship</td>
+          <td class="bold">old original Relationship</td>
           <td>~(guardian_relationship)</td>
           <td>~(Guardian2_Relationship)</td>
           <td></td>
         </tr>
         <tr>
-          <td class="bold">Old Last Name, First Name</td>
+          <td class="bold">old original Last Name, First Name</td>
           <td>~(guardian_LN), ~(guardian_FN)</td>
           <td>~(guardian2_LN), ~(guardian2_FN)</td>
         </tr>
         <tr>
-          <td class="bold">Old Address</td>
+          <td class="bold">old original Address</td>
           <td>~(guardianstreet)</td>
           <td>~(guardian2street)</td>
         </tr>
@@ -59,37 +59,37 @@
           <td>~(guardian2homephone)</td>
         </tr>
         <tr>
-          <td class="bold">Old Cell Phone</td>
+          <td class="bold">old original Cell Phone</td>
           <td>~(guardian_cell_phone)</td>
           <td>~(guardian2_cell_phone)</td>
         </tr>
         <tr>
-          <td class="bold">Old Day Phone</td>
+          <td class="bold">old original Day Phone</td>
           <td>~(guardiandayphone) Ext. ~(guardiandayphoneext)</td>
           <td>~(guardian2dayphone) Ext. ~(guardian2dayphoneext)</td>
         </tr>
         <tr>
           <td colspan="3">
-            <div align="center">Old Emergency Contacts</div>
+            <div align="center">old original Emergency Contacts</div>
           </td>
         </tr>
         <tr>
           <td></td>
-          <td class="bold">Old Emergency Contact 1's Information</td>
-          <td class="bold">Old Emergency Contact 2's Information</td>
+          <td class="bold">old original Emergency Contact 1's Information</td>
+          <td class="bold">old original Emergency Contact 2's Information</td>
         </tr>
         <tr>
-          <td class="bold">Old Emergency Contacts Name</td>
+          <td class="bold">old original Emergency Contacts Name</td>
           <td>~(Emerg_contact_1)</td>
           <td>~(Emerg_Contact_2)</td>
         </tr>
         <tr>
-          <td class="bold">Old Emergency Contacts Phone</td>
+          <td class="bold">old original Emergency Contacts Phone</td>
           <td>~(emerg_phone_1)</td>
           <td>~~(emerg_phone_2)</td>
         </tr>
         <tr>
-          <td class="bold">Old Relationship</td>
+          <td class="bold">old original Relationship</td>
           <td>~(Emerg_1_Rel)</td>
           <td>~(emerg_2_Rel)</td>
         </tr>
@@ -545,42 +545,42 @@
         </tr>
         <tr>
           <td class="bold">Relationship</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=rel;val=relationship;type=all;)</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=rel;val=relationship;type=all;)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=rel;val=relationship;type=all)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=rel;val=relationship;type=all)</td>
         </tr>
         <tr><td class="bold">Last Name, First Name</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=dem;val=Lastfirst;type=all;)</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=dem;val=Lastfirst;type=all;)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=dem;val=Lastfirst;type=all)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=dem;val=Lastfirst;type=all)</td>
         </tr>
         <tr>
           <td class="bold">Home Address</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=street;type=Home;)</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=street;type=Home;)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=street;type=all)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=street;type=all)</td>
         </tr>
         <tr>
         <td></td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=city;type=Home;), ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=stateprovince;type=Home;) ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=postalcode;type=Home;)</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=city;type=Home;), ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=stateprovince;type=Home;) ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=postalcode;type=Home;)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=city;type=all), ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=stateprovince;type=all) ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=addr;val=postalcode;type=all)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=city;type=all), ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=stateprovince;type=all) ~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=addr;val=postalcode;type=all)</td>
         </tr>
         <tr>
           <td class="bold">Home Phone</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Home;)</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Home;)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Home)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Home)</td>
         </tr>
         <tr>
           <td class="bold">Cell Phone</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Mobile;)</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Mobile;)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Mobile)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Mobile)</td>
         </tr>
         <tr>
           <td class="bold">Daytime Phone</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Daytime;)</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Daytime;)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Daytime)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Daytime)</td>
         </tr>
         <tr>
           <td class="bold">Work Phone</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Work;)</td>
-          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Work;)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=Work)</td>
+          <td>~(*contact_info;flags=non-emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=Work)</td>
         </tr>
         <tr>
           <td colspan="3" class="trans">
@@ -589,23 +589,23 @@
         </tr>
         <tr>
           <td></td>
-          <td class="bold">Old Emergency Contact 1's Information</td>
-          <td class="bold">Old Emergency Contact 2's Information</td>
+          <td class="bold">Emergency Contact 1's Information</td>
+          <td class="bold">Emergency Contact 2's Information</td>
         </tr>
         <tr>
           <td class="bold">Emergency Contact</td>
-          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=dem;val=Lastfirst;type=all;)</td>
-          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=dem;val=Lastfirst;type=all;)</td>
+          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=dem;val=Lastfirst;type=all)</td>
+          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=dem;val=Lastfirst;type=all)</td>
         </tr>
         <tr>
-          <td class="bold">Old Emergency Contacts Phone</td>
-          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=all;)</td>
-          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=all;)</td>
+          <td class="bold">Emergency Contacts Phone</td>
+          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=phone;val=phone;type=all)</td>
+          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=phone;val=phone;type=all)</td>
         </tr>
         <tr bgcolor="">
           <td class="bold">Relationship</td>
-          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=rel;val=relationship;type=all;)</td>
-          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=rel;val=relationship;type=all;)</td>
+          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=1;cat=rel;val=relationship;type=all)</td>
+          <td>~(*contact_info;flags=emergency;max-pers=all;which-pers=2;cat=rel;val=relationship;type=all)</td>
         </tr>
       </tbody>
     </table>
