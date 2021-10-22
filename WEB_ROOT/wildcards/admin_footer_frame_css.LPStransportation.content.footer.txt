@@ -1,5 +1,36 @@
 <div id="LPStransportationCustomhiddentable" style="display: none;">
   <div class="box-round" id="LPStransportationCustom">
+    <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
+      <tbody>
+        <tr class="headerrow">
+          <td colspan="4" align="center" class="bold">
+            Address Information for <br />~(first_name) ~(last_name)
+          </td>
+        </tr>
+        <tr>
+          <td>Home phone</td>
+          <td>~(home_phone)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Home Address</td>
+          <td>~([01]street)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>~(city) ~(state), ~(zip)</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
+      <tbody>
+        <tr class="headerrow">
+          <td align="center" class="bold">Contact Information for <br />~(first_name) ~(last_name)</td>
+        </tr>
+      </tbody>
+    </table>
     <!--
       Copying Contacts page source and displaying it in Demographics 'Contacts' section.
       -Omitted <script> code from Contacts that is not relevant to Demographics
@@ -13,7 +44,7 @@
       <!-- Start of <div controller = "contactStudentController"> : Context container for Contacts table -->
       <div data-ng-controller="contactStudentController">
         <p class="feedback-info" data-ng-if="!context.contacts.length" >This student does not have any associated contacts.</p>
-      <p  >( To add/edit, go to to Contacts on the Menu on the left.)</p>
+      <p  ></p>
         <!--============================================|STUDENT_CONTACTS_TABLE|============================================-->
         <table id="studentContactsTable" class="grid" data-ng-if="context.contacts.length" >
           <colgroup>
@@ -175,6 +206,81 @@
       <input id="schoolId" type="hidden" value="~(OverrideSchoolCode)" />
       <input id="studentNumber" type="hidden" value="~(rn)" />
     </div>
+    <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
+      <tbody>
+        <tr class="headerrow">
+          <td class="bold"align="center" colspan="3">
+            Old Original Guardian Information for <br />~(first_name) ~(last_name)
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Old Original Guardian 1's Information</td>
+          <td>Old Original Guardian 2's Information</td>
+        </tr>
+        <tr>
+          <td>Old Original Relationship</td>
+          <td>~(guardian_relationship)</td>
+          <td>~(Guardian2_Relationship)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Old Original Last Name, First Name</td>
+          <td>~(guardian_LN), ~(guardian_FN)</td>
+          <td>~(guardian2_LN), ~(guardian2_FN)</td>
+        </tr>
+        <tr>
+          <td>Old Original Address</td>
+          <td>~(guardianstreet)</td>
+          <td>~(guardian2street)</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>~(guardianCity), ~(guardianstate) ~(guardianzip)</td>
+          <td>~(guardian2city), ~(guardian2state) ~(guardian2zip)</td>
+        </tr>
+        <tr>
+          <td>Old Home Phone</td>
+          <td>~(guardianhomephone)</td>
+          <td>~(guardian2homephone)</td>
+        </tr>
+        <tr>
+          <td>Old Original Cell Phone</td>
+          <td>~(guardian_cell_phone)</td>
+          <td>~(guardian2_cell_phone)</td>
+        </tr>
+        <tr>
+          <td>Old Original Day Phone</td>
+          <td>~(guardiandayphone) Ext. ~(guardiandayphoneext)</td>
+          <td>~(guardian2dayphone) Ext. ~(guardian2dayphoneext)</td>
+        </tr>
+        <tr class="headerrow">
+          <td class="bold" align="center" colspan="3">
+            Old Original Emergency Contacts for <br />~(first_name) ~(last_name)
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Old Original Emergency Contact 1's Information</td>
+          <td>Old Original Emergency Contact 2's Information</td>
+        </tr>
+        <tr>
+          <td>Old Original Emergency Contacts Name</td>
+          <td>~(Emerg_contact_1)</td>
+          <td>~(Emerg_Contact_2)</td>
+        </tr>
+        <tr>
+          <td>Old Original Emergency Contacts Phone</td>
+          <td>~(emerg_phone_1)</td>
+          <td>~~(emerg_phone_2)</td>
+        </tr>
+        <tr>
+          <td>Old Original Relationship</td>
+          <td>~(Emerg_1_Rel)</td>
+          <td>~(emerg_2_Rel)</td>
+        </tr>
+      </tbody>
+    </table>
     <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
       <tbody>
         <tr class="headerrow">
@@ -607,101 +713,6 @@
             />
           </td>
           <td colspan="2"></td>
-        </tr>
-      </tbody>
-    </table>
-    <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
-      <tbody>
-        <tr class="headerrow">
-          <td colspan="4" align="center" class="bold">
-            old original Address Information for <br />~(first_name) ~(last_name)
-          </td>
-        </tr>
-        <tr>
-          <td class="bold">old original Home phone</td>
-          <td>~(home_phone)</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>old original Home Address</td>
-          <td>~([01]street)</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>~(city) ~(state), ~(zip)</td>
-          <td></td>
-        </tr>
-        <tr class="headerrow">
-          <td class="bold" colspan="3">
-            <div align="center">old original Guardian Information</div>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="bold">old original Guardian 1's Information</td>
-          <td class="bold">old original Guardian 2's Information</td>
-        </tr>
-        <tr>
-          <td class="bold">old original Relationship</td>
-          <td>~(guardian_relationship)</td>
-          <td>~(Guardian2_Relationship)</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="bold">old original Last Name, First Name</td>
-          <td>~(guardian_LN), ~(guardian_FN)</td>
-          <td>~(guardian2_LN), ~(guardian2_FN)</td>
-        </tr>
-        <tr>
-          <td class="bold">old original Address</td>
-          <td>~(guardianstreet)</td>
-          <td>~(guardian2street)</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>~(guardianCity), ~(guardianstate) ~(guardianzip)</td>
-          <td>~(guardian2city), ~(guardian2state) ~(guardian2zip)</td>
-        </tr>
-        <tr>
-          <td class="bold">Old Home Phone</td>
-          <td>~(guardianhomephone)</td>
-          <td>~(guardian2homephone)</td>
-        </tr>
-        <tr>
-          <td class="bold">old original Cell Phone</td>
-          <td>~(guardian_cell_phone)</td>
-          <td>~(guardian2_cell_phone)</td>
-        </tr>
-        <tr>
-          <td class="bold">old original Day Phone</td>
-          <td>~(guardiandayphone) Ext. ~(guardiandayphoneext)</td>
-          <td>~(guardian2dayphone) Ext. ~(guardian2dayphoneext)</td>
-        </tr>
-        <tr class="headerrow">
-          <td colspan="3">
-            <div class="bold" align="center">old original Emergency Contacts</div>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="bold">old original Emergency Contact 1's Information</td>
-          <td class="bold">old original Emergency Contact 2's Information</td>
-        </tr>
-        <tr>
-          <td class="bold">old original Emergency Contacts Name</td>
-          <td>~(Emerg_contact_1)</td>
-          <td>~(Emerg_Contact_2)</td>
-        </tr>
-        <tr>
-          <td class="bold">old original Emergency Contacts Phone</td>
-          <td>~(emerg_phone_1)</td>
-          <td>~~(emerg_phone_2)</td>
-        </tr>
-        <tr>
-          <td class="bold">old original Relationship</td>
-          <td>~(Emerg_1_Rel)</td>
-          <td>~(emerg_2_Rel)</td>
         </tr>
       </tbody>
     </table>
