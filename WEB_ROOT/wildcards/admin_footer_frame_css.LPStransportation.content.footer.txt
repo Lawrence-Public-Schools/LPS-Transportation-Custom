@@ -272,7 +272,7 @@
         <tr>
           <td>Old Original Emergency Contacts Phone</td>
           <td>~(emerg_phone_1)</td>
-          <td>~~(emerg_phone_2)</td>
+          <td>~(emerg_phone_2)</td>
         </tr>
         <tr>
           <td>Old Original Relationship</td>
