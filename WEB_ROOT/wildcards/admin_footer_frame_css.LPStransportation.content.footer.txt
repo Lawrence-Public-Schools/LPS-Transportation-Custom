@@ -4,30 +4,21 @@
       <tbody>
         <tr class="headerrow">
           <td colspan="4" align="center" class="bold">
-            Address Information for <br />~(first_name) ~(last_name)
+            Address Information
           </td>
         </tr>
         <tr>
-          <td>Home phone</td>
+          <td>Home Phone</td>
           <td>~(home_phone)</td>
-          <td></td>
-        </tr>
-        <tr>
           <td>Home Address</td>
-          <td>~([01]street)</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>~(city) ~(state), ~(zip)</td>
-          <td></td>
+          <td>~([01]street), ~(city) ~(state), ~(zip)</td>
         </tr>
       </tbody>
     </table>
     <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
       <tbody>
         <tr class="headerrow">
-          <td align="center" class="bold">Contact Information for <br />~(first_name) ~(last_name)</td>
+          <td align="center" class="bold">Contact Information</td>
         </tr>
       </tbody>
     </table>
@@ -210,7 +201,7 @@
       <tbody>
         <tr class="headerrow">
           <td class="bold"align="center" colspan="3">
-            Old Original Guardian Information for <br />~(first_name) ~(last_name)
+            Old Original Guardian Information
           </td>
         </tr>
         <tr>
@@ -231,13 +222,8 @@
         </tr>
         <tr>
           <td>Old Original Address</td>
-          <td>~(guardianstreet)</td>
-          <td>~(guardian2street)</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>~(guardianCity), ~(guardianstate) ~(guardianzip)</td>
-          <td>~(guardian2city), ~(guardian2state) ~(guardian2zip)</td>
+          <td>~(guardianstreet), ~(guardianCity), ~(guardianstate) ~(guardianzip)</td>
+          <td>~(guardian2street), ~(guardian2city), ~(guardian2state) ~(guardian2zip)</td>
         </tr>
         <tr>
           <td>Old Home Phone</td>
@@ -256,7 +242,7 @@
         </tr>
         <tr class="headerrow">
           <td class="bold" align="center" colspan="3">
-            Old Original Emergency Contacts for <br />~(first_name) ~(last_name)
+            Old Original Emergency Contacts
           </td>
         </tr>
         <tr>
@@ -284,7 +270,7 @@
     <table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
       <tbody>
         <tr class="headerrow">
-          <td colspan="8" align="center" class="bold">Transportation Information for <br />~(first_name) ~(last_name)</td>
+          <td colspan="8" align="center" class="bold">Transportation Information</td>
         </tr>
         <tr>
           <td>Transportation</td>
